@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="9" />
+  <Class Name="CentralBusTerminalClient.EditBusEventArgs" Collapsed="true">
+    <Position X="13.5" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Classes\EditEntitiesEventsArgs\EditBusEventArgs.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.EditRunExecutionEventArgs" Collapsed="true">
+    <Position X="15.5" Y="5.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Classes\EditEntitiesEventsArgs\EditRunExecutionEventArgs.cs</FileName>
+      <HashCode>AABAAAQAAAAAAAIAAAAAAAAAAAAAABABAAEAAAAAAQQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.Bus" Collapsed="true">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\Bus.cs</FileName>
+      <HashCode>EEQgAAAkgXQAEQCAQACAgggQBKBQZAAAAACAAIFgKZA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.RunExecution" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\RunExecution.cs</FileName>
+      <HashCode>EChQAA0GpXQAkYbCAABCxjwEECDkQDIVAKUgSKNECYE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.BusPlanningPathExpense" Collapsed="true">
+    <Position X="5.75" Y="1.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\BusPlanningPathExpense.cs</FileName>
+      <HashCode>EQAAAAQBAAAAAAAAAAAAAgAAACAAAAAAAAAAAIEAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.Entity" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\Entity.cs</FileName>
+      <HashCode>EAAAAAAEAAAAERACABCEIoAIACBAAAAAAAgAAIFAgIA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CentralBusTerminalClient.FoundPathMap" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\FoundPathMap.cs</FileName>
+      <HashCode>EQghgAAEAAAAEQIAAAAEAgQAAiAAAAAQAAIAAINAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.FoundPathMapStopCoordinates" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\FoundPathMapStopCoordinates.cs</FileName>
+      <HashCode>EAgggACEABAAEQIAAQAGAgQAACAAQIFQAAUEAINACoE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.FoundPathStop" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\FoundPathStop.cs</FileName>
+      <HashCode>EAgAgAAEEAEAEQIAAAAEAgQAQCAAAAAQAAAAAINAAKA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.FoundStop" Collapsed="true">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Entities\FoundStop.cs</FileName>
+      <HashCode>EAAAgA4EABAAkYDAAAAEgggAAKBAABAAAAQgAKHAIIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.ConnectionCondition" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Classes\ConnectionCondition.cs</FileName>
+      <HashCode>AAAAAAAAQMAAAAAQAAAAAAAQAAAAAAACAAAACAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.Parameter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\Parameter.cs</FileName>
+      <HashCode>IQAAAAAAAAAAAkAAAAIgACSAAABAAAEAIAAgBABAAAE=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CentralBusTerminalClient.DataContainer" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\DataContainer.cs</FileName>
+      <HashCode>BAIoQAAEAMRIAAAQGRAEAIAACEAAAAChQAAAIAAAIAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.OperationReport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\OperationReport.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAQAABAAAAAAAAAAIABAAAI=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CentralBusTerminalClient.ConnectionForm" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\ConnectionForm.cs</FileName>
+      <HashCode>DACABQAAACQAgAAAACCAAAgCAAAIAAAAAIASAAQAASA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.StopsSearchForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Forms\StopsSearchForm.cs</FileName>
+      <HashCode>AAAATIAIgKIAgAEgBAzQAQICQCAAgQAAEIBQACpAAQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CentralBusTerminalClient.MessageForm" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\MessageForm.cs</FileName>
+      <HashCode>AAAAAAAQQCACoAABAASAAABSAAQAAAAAAAAIEAACABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.ModeChoiceForm" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Forms\ModeChoiceForm.cs</FileName>
+      <HashCode>AAAAEIAAACAAAAAAAACAAAACAACAAAAAAAAEAAAAAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.PathStopsSearchForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="7.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Forms\PathStopsSearchForm.cs</FileName>
+      <HashCode>AMAARIMABGAAgBAABASQAAgCQKAsgAAAMAARAChACSA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CentralBusTerminalClient.ShowTablesForm" Collapsed="true">
+    <Position X="6.25" Y="5.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Forms\ShowTablesForm.cs</FileName>
+      <HashCode>4IDKV5UH5id7qrQ73jvm52tCkqJphjUHvnVmToFkRkQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CentralBusTerminalClient.EditBusForm" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\EditEntitiesForms\EditBusForm.cs</FileName>
+      <HashCode>AAAQAAAEgCgAkQAwAACQAQCCWCAQAAgEIECAAAxQBAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CentralBusTerminalClient.EditRunExecutionForm" Collapsed="true">
+    <Position X="6" Y="4.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Forms\EditEntitiesForms\EditRunExecutionForm.cs</FileName>
+      <HashCode>AAAwACEAQKAAhSAgCEmQAQICUCJIQAEAOEAIIk5AYAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CentralBusTerminalClient.EditEntityForm" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Forms\EditEntitiesForms\EditEntityForm.cs</FileName>
+      <HashCode>AAAQAAAARCBAAQABBACQAACCwCAAAAAAAAQQEAhAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="CentralBusTerminalClient.ConnectionAttributes" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Structs\ConnectionAttributes.cs</FileName>
+      <HashCode>AAAGAAAAAAAAAgAAAAAAAAgAAAAAAAACACAAAAAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CentralBusTerminalClient.PathMapStopCoordinatesItem" Collapsed="true">
+    <Position X="12.75" Y="3.75" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Structs\PathMapStopCoordinatesItem.cs</FileName>
+      <HashCode>AEAAAAAAAAAAAAAAAAAIAAAAAABAAAAAIAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CentralBusTerminalClient.DataGridViewRowCellValue" Collapsed="true">
+    <Position X="15.5" Y="3.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Structs\DataGridViewRowCellValue.cs</FileName>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="CentralBusTerminalClient.PathMapItem" Collapsed="true">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Structs\PathMap.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAgAEAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="CentralBusTerminalClient.IClearAble" Collapsed="true">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IClearAble.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CentralBusTerminalClient.IEntityForm" Collapsed="true">
+    <Position X="8.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IEntityForm.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAQCAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CentralBusTerminalClient.IEditEntityForm" Collapsed="true">
+    <Position X="8.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Interfaces\IEditEntityForm.cs</FileName>
+      <HashCode>AAAQAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CentralBusTerminalClient.ConnectionSecurityLevel" Collapsed="true">
+    <Position X="15.75" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Enums\ConnectionSecurityLevel.cs</FileName>
+      <HashCode>AAAAAAAAEBAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CentralBusTerminalClient.OperationResult" Collapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Enums\OperationResult.cs</FileName>
+      <HashCode>ABoAAAgACBEAAkAAIQMBBAIAAgAoAEQEEAQAGBAQEBg=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CentralBusTerminalClient.StoredProcedureAction" Collapsed="true">
+    <Position X="12" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <FileName>Enums\StoredProcedureAction.cs</FileName>
+      <HashCode>QAAAAAAEABAAAUAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

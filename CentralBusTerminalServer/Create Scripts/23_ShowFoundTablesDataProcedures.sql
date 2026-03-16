@@ -1,0 +1,128 @@
+--<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+-- П P O Ц E Д У P Ы   П O К A З A   П О И С К А   Д A Н Н Ы X   T A Б Л И Ц
+--<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+
+-- Пpoцeдуpa пoкaзa найденных остановок
+CREATE PROCEDURE SP_ShowFoundStops
+(
+	-- Подстрока названия
+	@ioNameSubstring   nvarchar( 50 ),
+	-- Нaзвaниe категирии автобуса
+	@ioBusCategoryName nvarchar( 10 ),
+	-- Нaзвaниe дня недели
+	@ioWeekdayName     nvarchar( 15 )
+)
+AS
+	-- Показ остановок с заданными подстрокой названия и
+	-- категорией автобуса и днём недели активных рейсов
+	SELECT TOP 25
+		-- Название
+		[Name],
+		-- Маршрут
+		PathName   AS Path,
+		-- Количество    остановок            маршрута
+		PathStopsQuantity,
+		-- Номер                   в пределах маршрута
+		Number,
+		-- Расстояние до остановки в пределах маршрута
+		Distance,
+		-- Время
+		TimeString AS [Time],
+		-- Цена билета             на автобус
+		BusTicketCost,
+		-- Стоимость провоза багажа в автобусе
+		BusSeatLuggageTransportCost
+	FROM dbo.FN_ShownFoundStops
+	(
+		@ioNameSubstring,
+		@ioBusCategoryName,
+		@ioWeekdayName
+	)
+	ORDER BY
+		[Name],
+		PathName,
+		TimeString
+
+	RETURN 0
+GO
+-- SP_ShowFoundStops
+------------------------------------------------------------------------------
+
+-- Пpoцeдуpa пoкaзa найденных остановок маршрута
+CREATE PROCEDURE SP_ShowFoundPathStops
+		-- Название маршрута
+	( @ioPathName nvarchar( 50 ) )
+AS
+	-- Показ остановок с расстояниями для маршрута с заданным названием
+	SELECT
+		-- Номер                   в пределах маршрута
+		Number,
+		-- Название
+		[Name],
+		-- Расстояние до предыдущей
+		AfterPreviousDistance,
+		-- Расстояние до остановки в пределах маршрута
+		Distance
+	FROM dbo.FN_ShownFoundPathStops( @ioPathName )
+	ORDER BY
+		Number,
+		[Name]
+
+	RETURN 0
+GO
+-- SP_ShowFoundPathStops
+------------------------------------------------------------------------------
+
+-- Пpoцeдуpa пoкaзa найденных карт маршрута
+CREATE PROCEDURE SP_ShowFoundPathMaps
+		-- Название маршрута
+	( @ioPathName nvarchar( 50 ) )
+AS
+	-- Показ карт маршрута с заданным названием
+	SELECT
+		-- Карта
+		MapName AS Map,
+		-- Абсцисса начального пункта
+		InitialPointX,
+		-- Ордината начального пункта
+		InitialPointY
+	FROM dbo.FN_ShownFoundPathMaps( @ioPathName )
+	ORDER BY MapName
+
+	RETURN 0
+GO
+-- SP_ShowFoundPathMaps
+------------------------------------------------------------------------------
+
+-- Пpoцeдуpa пoкaзa найденных координат остановок карты маршрута
+CREATE PROCEDURE SP_ShowFoundPathMapStopsCoordinates
+(
+	-- Название маршрута
+	@ioPathName nvarchar( 50 ),
+	-- Нaзвaниe карты
+	@ioMapName  nvarchar( 50 )
+)
+AS
+	-- Показ координат остановок на заданной карте маршрута с заданным названием
+	SELECT
+		-- Номер    остановки в пределах маршрута
+		PathStopNumber,
+		-- Остановка
+		StopName AS Stop,
+		-- Абсцисса остановки
+		StopX,
+		-- Ордината остановки
+		StopY
+	FROM dbo.FN_ShownFoundPathMapStopsCoordinates
+	(
+		@ioPathName,
+		@ioMapName
+	)
+	ORDER BY
+		PathStopNumber,
+		StopName
+
+	RETURN 0
+GO
+-- SP_ShowFoundPathMapStopsCoordinates
+------------------------------------------------------------------------------

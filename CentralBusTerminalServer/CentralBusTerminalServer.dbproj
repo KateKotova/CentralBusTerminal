@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <PostUpgradeAddToSCC>;e:\WORK_KATE\Projects\ДИПЛОМ_2009_CentralBusTerminal 5.15\Программа\CentralBusTerminal 5._ - версии\CentralBusTerminal\CentralBusTerminalServer\CentralBusTerminalServer.dbproj;e:\WORK_KATE\Projects\ДИПЛОМ_2009_CentralBusTerminal 5.15\Программа\CentralBusTerminal 5._ - версии\CentralBusTerminal\CentralBusTerminalServer\Connections.txt;e:\WORK_KATE\Projects\ДИПЛОМ_2009_CentralBusTerminal 5.15\Программа\CentralBusTerminal 5._ - версии\CentralBusTerminal\CentralBusTerminalServer\Scripts\Post-Deployment\Script.PostDeployment.sql;e:\WORK_KATE\Projects\ДИПЛОМ_2009_CentralBusTerminal 5.15\Программа\CentralBusTerminal 5._ - версии\CentralBusTerminal\CentralBusTerminalServer\Scripts\Pre-Deployment\Script.PreDeployment.sql</PostUpgradeAddToSCC>
+    <PreviousProjectVersion>4.0</PreviousProjectVersion>
+    <UpgradedFromDBP>True</UpgradedFromDBP>
+    <Name>dbpProjectName</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.0</ProjectVersion>
+    <ProjectGuid>{67cbc824-a49e-4e9b-a947-360f3dfe65c3}</ProjectGuid>
+    <DSP>Microsoft.Data.Schema.Sql.Sql100DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchema</DefaultFileStructure>
+    <DeployToDatabaseAddToServerExplorer>True</DeployToDatabaseAddToServerExplorer>
+    <DeployToScript>True</DeployToScript>
+    <CatalogPropertiesFile>Properties\Database.sqlsettings</CatalogPropertiesFile>
+    <LoadSqlClrTypes>True</LoadSqlClrTypes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\TeamData\Microsoft.Data.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+  </ItemGroup>
+  <ItemGroup>
+    <PropertiesFile Include="Properties\Database.sqlsettings">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqldeployment">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqlcmdvars">
+    </PropertiesFile>
+    <Build Include="Properties\Database.sqlpermissions">
+      <ModelBuilderType>Permissions</ModelBuilderType>
+    </Build>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql">
+      <SubType>Code</SubType>
+    </PreDeploy>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql">
+      <SubType>Code</SubType>
+    </PostDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Schema Objects" />
+    <Folder Include="Schema Objects\Schemas" />
+    <Folder Include="Schema Objects\Schemas\dbo" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Table Types" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker" />
+    <Folder Include="Schema Objects\Schemas\dbo\Service Broker\Queues" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics" />
+    <Folder Include="Schema Objects\Database Level Objects" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers" />
+    <Folder Include="Schema Objects\Database Level Objects\Security" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Encryption Keys" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Database Audit Specification" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Broker Priorities" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Stoplists" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes" />
+    <Folder Include="Change Scripts" />
+    <Folder Include="Create Scripts" />
+    <Folder Include="Create Scripts\Copies" />
+    <Folder Include="Create Scripts\Copies\Old_1" />
+    <Folder Include="Create Scripts\Copies\Old_2" />
+    <Folder Include="Create Scripts\Copies\Old_3" />
+    <Folder Include="Create Scripts\Copies\Old_4" />
+    <Folder Include="Create Scripts\Copies\Old_5" />
+    <Folder Include="Create Scripts\Copies\Old_6" />
+    <Folder Include="Queries" />
+    <Folder Include="Properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Connections.txt" />
+    <NotInBuild Include="Create Scripts\01_Tables.sql" />
+    <NotInBuild Include="Create Scripts\02_StringFunctions.sql" />
+    <NotInBuild Include="Create Scripts\03_DatetimeSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\04_BeforeEditTablesDataSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\05_AfterEditTablesDataFunctions.sql" />
+    <NotInBuild Include="Create Scripts\06_InsteadOfInsertTriggers.sql" />
+    <NotInBuild Include="Create Scripts\07_InsteadOfUpdateTriggers.sql" />
+    <NotInBuild Include="Create Scripts\08_AfterInsertTriggers.sql" />
+    <NotInBuild Include="Create Scripts\09_AfterUpdateTriggers.sql" />
+    <NotInBuild Include="Create Scripts\10_AfterDeleteTriggers.sql" />
+    <NotInBuild Include="Create Scripts\12_PrepareToShowTablesDataFunctions.sql" />
+    <NotInBuild Include="Create Scripts\13_ShowTablesDataFunctions.sql" />
+    <NotInBuild Include="Create Scripts\14_ShowTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\15_TablesDataKeysAnalysesProcedures.sql" />
+    <NotInBuild Include="Create Scripts\16_NotKeyTablesDataAnalysesProcedures.sql" />
+    <NotInBuild Include="Create Scripts\17_ErrorsMessagesSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\18_InsertTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\19_UpdateTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\20_DeleteTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\21_SetTablesDataSearchProcedures.sql" />
+    <NotInBuild Include="Create Scripts\22_ShowFoundTablesDataFunctions.sql" />
+    <NotInBuild Include="Create Scripts\23_ShowFoundTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\24_RolesAndUsers.sql" />
+    <NotInBuild Include="Create Scripts\25_GetCurrentUserRoleNameSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\26_RolesGrantsOnTables.sql" />
+    <NotInBuild Include="Create Scripts\27_RolesGrantsOnFunctions.sql" />
+    <NotInBuild Include="Create Scripts\28_RolesGrantsOnProcedures.sql" />
+    <NotInBuild Include="Create Scripts\Copies\1_Roles.sql" />
+    <NotInBuild Include="Create Scripts\Copies\2_Types.sql" />
+    <NotInBuild Include="Create Scripts\Copies\21_.sql" />
+    <NotInBuild Include="Create Scripts\Copies\3_Tables.sql" />
+    <NotInBuild Include="Create Scripts\Copies\4_Functions.sql" />
+    <NotInBuild Include="Create Scripts\Copies\5_Procedures.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_1\01_Tables_Economic.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_1\1_PeriodsInitialInsert.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_1\1_Types.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_1\2_EventsInitialInsert.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_1\2_Tables.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_1\3_Constants.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_2\04_RecountTablesDataSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_2\05_InsteadOfInsertTriggers.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_2\06_InsteadOfUpdateTriggers.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_2\1_Insert.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_2\2_Update.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_2\3_Delete.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_3\09_ShowTablesDataFunctions.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_3\1_Paths.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_3\10_ShowTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_3\Script2.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_4\08_InsertTablesData.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_4\11_GetTablesDataSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_4\2_Formatting.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\02_CalculatingSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\03_StringFunctions.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\12_ErrorsMessagesSubprograms.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\13_InsertTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\14_UpdateTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\15_DeleteTablesDataProcedures.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\4_Update.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_5\OldEdit.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_6\19_CoefficientsTablesFunctions.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_6\2_Tables.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_6\2_Trips.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_6\20_ShowCoefficientsTablesFunctions.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_6\21_ShowCoefficientsTablesProcedures.sql" />
+    <NotInBuild Include="Create Scripts\Copies\Old_6\OldTrips.sql" />
+    <NotInBuild Include="Queries\11_InsertTablesData.sql" />
+    <NotInBuild Include="Queries\DEMO.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+</Project>

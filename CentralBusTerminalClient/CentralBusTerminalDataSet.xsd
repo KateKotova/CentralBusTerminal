@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CentralBusTerminalDataSet" targetNamespace="http://tempuri.org/CentralBusTerminalDataSet.xsd" xmlns:mstns="http://tempuri.org/CentralBusTerminalDataSet.xsd" xmlns="http://tempuri.org/CentralBusTerminalDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CentralBusTerminalConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="CentralBusTerminalConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CentralBusTerminalClient.Properties.Settings.GlobalReference.Default.CentralBusTerminalConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MainFacilitiesUseAnalysisConnectionString" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="MainFacilitiesUseAnalysisConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CentralBusTerminalClient.Properties.Settings.GlobalReference.Default.MainFacilitiesUseAnalysisConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CentralBusTerminalDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CentralBusTerminalDataSet" msprop:Generator_DataSetName="CentralBusTerminalDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Buses" msprop:Generator_UserTableName="Buses" msprop:Generator_RowDeletedName="BusesRowDeleted" msprop:Generator_RowChangedName="BusesRowChanged" msprop:Generator_RowClassName="BusesRow" msprop:Generator_RowChangingName="BusesRowChanging" msprop:Generator_RowEvArgName="BusesRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesRowChangeEventHandler" msprop:Generator_TableClassName="BusesDataTable" msprop:Generator_TableVarName="tableBuses" msprop:Generator_RowDeletingName="BusesRowDeleting" msprop:Generator_TablePropName="Buses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarCode" msprop:Generator_UserColumnName="CarCode" msprop:Generator_ColumnVarNameInTable="columnCarCode" msprop:Generator_ColumnPropNameInRow="CarCode" msprop:Generator_ColumnPropNameInTable="CarCodeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SeatsQuantity" msprop:Generator_UserColumnName="SeatsQuantity" msprop:Generator_ColumnVarNameInTable="columnSeatsQuantity" msprop:Generator_ColumnPropNameInRow="SeatsQuantity" msprop:Generator_ColumnPropNameInTable="SeatsQuantityColumn" type="xs:unsignedByte" />
+              <xs:element name="UsageStartYear" msprop:Generator_UserColumnName="UsageStartYear" msprop:Generator_ColumnVarNameInTable="columnUsageStartYear" msprop:Generator_ColumnPropNameInRow="UsageStartYear" msprop:Generator_ColumnPropNameInTable="UsageStartYearColumn" type="xs:short" />
+              <xs:element name="SanityState" msprop:Generator_UserColumnName="SanityState" msprop:Generator_ColumnVarNameInTable="columnSanityState" msprop:Generator_ColumnPropNameInRow="SanityState" msprop:Generator_ColumnPropNameInTable="SanityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActivityState" msprop:Generator_UserColumnName="ActivityState" msprop:Generator_ColumnVarNameInTable="columnActivityState" msprop:Generator_ColumnPropNameInRow="ActivityState" msprop:Generator_ColumnPropNameInTable="ActivityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusesCategories" msprop:Generator_UserTableName="BusesCategories" msprop:Generator_RowDeletedName="BusesCategoriesRowDeleted" msprop:Generator_RowChangedName="BusesCategoriesRowChanged" msprop:Generator_RowClassName="BusesCategoriesRow" msprop:Generator_RowChangingName="BusesCategoriesRowChanging" msprop:Generator_RowEvArgName="BusesCategoriesRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesCategoriesRowChangeEventHandler" msprop:Generator_TableClassName="BusesCategoriesDataTable" msprop:Generator_TableVarName="tableBusesCategories" msprop:Generator_RowDeletingName="BusesCategoriesRowDeleting" msprop:Generator_TablePropName="BusesCategories">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActivityState" msprop:Generator_UserColumnName="ActivityState" msprop:Generator_ColumnVarNameInTable="columnActivityState" msprop:Generator_ColumnPropNameInRow="ActivityState" msprop:Generator_ColumnPropNameInTable="ActivityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusesPlannings" msprop:Generator_UserTableName="BusesPlannings" msprop:Generator_RowDeletedName="BusesPlanningsRowDeleted" msprop:Generator_RowChangedName="BusesPlanningsRowChanged" msprop:Generator_RowClassName="BusesPlanningsRow" msprop:Generator_RowChangingName="BusesPlanningsRowChanging" msprop:Generator_RowEvArgName="BusesPlanningsRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesPlanningsRowChangeEventHandler" msprop:Generator_TableClassName="BusesPlanningsDataTable" msprop:Generator_TableVarName="tableBusesPlannings" msprop:Generator_RowDeletingName="BusesPlanningsRowDeleting" msprop:Generator_TablePropName="BusesPlannings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SeatsQuantity" msprop:Generator_UserColumnName="SeatsQuantity" msprop:Generator_ColumnVarNameInTable="columnSeatsQuantity" msprop:Generator_ColumnPropNameInRow="SeatsQuantity" msprop:Generator_ColumnPropNameInTable="SeatsQuantityColumn" type="xs:unsignedByte" />
+              <xs:element name="ActivityState" msprop:Generator_UserColumnName="ActivityState" msprop:Generator_ColumnVarNameInTable="columnActivityState" msprop:Generator_ColumnPropNameInRow="ActivityState" msprop:Generator_ColumnPropNameInTable="ActivityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusesPlanningsPathsExpenses" msprop:Generator_UserTableName="BusesPlanningsPathsExpenses" msprop:Generator_RowDeletedName="BusesPlanningsPathsExpensesRowDeleted" msprop:Generator_RowChangedName="BusesPlanningsPathsExpensesRowChanged" msprop:Generator_RowClassName="BusesPlanningsPathsExpensesRow" msprop:Generator_RowChangingName="BusesPlanningsPathsExpensesRowChanging" msprop:Generator_RowEvArgName="BusesPlanningsPathsExpensesRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesPlanningsPathsExpensesRowChangeEventHandler" msprop:Generator_TableClassName="BusesPlanningsPathsExpensesDataTable" msprop:Generator_TableVarName="tableBusesPlanningsPathsExpenses" msprop:Generator_RowDeletingName="BusesPlanningsPathsExpensesRowDeleting" msprop:Generator_TablePropName="BusesPlanningsPathsExpenses">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PathLength" msprop:Generator_UserColumnName="PathLength" msprop:Generator_ColumnVarNameInTable="columnPathLength" msprop:Generator_ColumnPropNameInRow="PathLength" msprop:Generator_ColumnPropNameInTable="PathLengthColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BusCategory" msprop:Generator_UserColumnName="BusCategory" msprop:Generator_ColumnVarNameInTable="columnBusCategory" msprop:Generator_ColumnPropNameInRow="BusCategory" msprop:Generator_ColumnPropNameInTable="BusCategoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusSeatsQuantity" msprop:Generator_UserColumnName="BusSeatsQuantity" msprop:Generator_ColumnVarNameInTable="columnBusSeatsQuantity" msprop:Generator_ColumnPropNameInRow="BusSeatsQuantity" msprop:Generator_ColumnPropNameInTable="BusSeatsQuantityColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Direction" msprop:Generator_UserColumnName="Direction" msprop:Generator_ColumnVarNameInTable="columnDirection" msprop:Generator_ColumnPropNameInRow="Direction" msprop:Generator_ColumnPropNameInTable="DirectionColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DirectionOneKmCost" msprop:Generator_UserColumnName="DirectionOneKmCost" msprop:Generator_ColumnVarNameInTable="columnDirectionOneKmCost" msprop:Generator_ColumnPropNameInRow="DirectionOneKmCost" msprop:Generator_ColumnPropNameInTable="DirectionOneKmCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BusPlanningPathExpense" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BusPlanningPathExpense" msprop:Generator_ColumnVarNameInTable="columnBusPlanningPathExpense" msprop:Generator_ColumnPropNameInRow="BusPlanningPathExpense" msprop:Generator_ColumnPropNameInTable="BusPlanningPathExpenseColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusesSanitiesStates" msprop:Generator_UserTableName="BusesSanitiesStates" msprop:Generator_RowDeletedName="BusesSanitiesStatesRowDeleted" msprop:Generator_RowChangedName="BusesSanitiesStatesRowChanged" msprop:Generator_RowClassName="BusesSanitiesStatesRow" msprop:Generator_RowChangingName="BusesSanitiesStatesRowChanging" msprop:Generator_RowEvArgName="BusesSanitiesStatesRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesSanitiesStatesRowChangeEventHandler" msprop:Generator_TableClassName="BusesSanitiesStatesDataTable" msprop:Generator_TableVarName="tableBusesSanitiesStates" msprop:Generator_RowDeletingName="BusesSanitiesStatesRowDeleting" msprop:Generator_TablePropName="BusesSanitiesStates">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusesSeatsLuggagesPresences" msprop:Generator_UserTableName="BusesSeatsLuggagesPresences" msprop:Generator_RowDeletedName="BusesSeatsLuggagesPresencesRowDeleted" msprop:Generator_RowChangedName="BusesSeatsLuggagesPresencesRowChanged" msprop:Generator_RowClassName="BusesSeatsLuggagesPresencesRow" msprop:Generator_RowChangingName="BusesSeatsLuggagesPresencesRowChanging" msprop:Generator_RowEvArgName="BusesSeatsLuggagesPresencesRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesSeatsLuggagesPresencesRowChangeEventHandler" msprop:Generator_TableClassName="BusesSeatsLuggagesPresencesDataTable" msprop:Generator_TableVarName="tableBusesSeatsLuggagesPresences" msprop:Generator_RowDeletingName="BusesSeatsLuggagesPresencesRowDeleting" msprop:Generator_TablePropName="BusesSeatsLuggagesPresences">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusesSeatsSalesStates" msprop:Generator_UserTableName="BusesSeatsSalesStates" msprop:Generator_RowDeletedName="BusesSeatsSalesStatesRowDeleted" msprop:Generator_RowChangedName="BusesSeatsSalesStatesRowChanged" msprop:Generator_RowClassName="BusesSeatsSalesStatesRow" msprop:Generator_RowChangingName="BusesSeatsSalesStatesRowChanging" msprop:Generator_RowEvArgName="BusesSeatsSalesStatesRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesSeatsSalesStatesRowChangeEventHandler" msprop:Generator_TableClassName="BusesSeatsSalesStatesDataTable" msprop:Generator_TableVarName="tableBusesSeatsSalesStates" msprop:Generator_RowDeletingName="BusesSeatsSalesStatesRowDeleting" msprop:Generator_TablePropName="BusesSeatsSalesStates">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="BusesTicketsCosts" msprop:Generator_UserTableName="BusesTicketsCosts" msprop:Generator_RowDeletedName="BusesTicketsCostsRowDeleted" msprop:Generator_RowChangedName="BusesTicketsCostsRowChanged" msprop:Generator_RowClassName="BusesTicketsCostsRow" msprop:Generator_RowChangingName="BusesTicketsCostsRowChanging" msprop:Generator_RowEvArgName="BusesTicketsCostsRowChangeEvent" msprop:Generator_RowEvHandlerName="BusesTicketsCostsRowChangeEventHandler" msprop:Generator_TableClassName="BusesTicketsCostsDataTable" msprop:Generator_TableVarName="tableBusesTicketsCosts" msprop:Generator_RowDeletingName="BusesTicketsCostsRowDeleting" msprop:Generator_TablePropName="BusesTicketsCosts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusCategory" msprop:Generator_UserColumnName="BusCategory" msprop:Generator_ColumnVarNameInTable="columnBusCategory" msprop:Generator_ColumnPropNameInRow="BusCategory" msprop:Generator_ColumnPropNameInTable="BusCategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusTicketCost" msprop:Generator_UserColumnName="BusTicketCost" msprop:Generator_ColumnVarNameInTable="columnBusTicketCost" msprop:Generator_ColumnPropNameInRow="BusTicketCost" msprop:Generator_ColumnPropNameInTable="BusTicketCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BusSeatLuggageTransportCost" msprop:Generator_UserColumnName="BusSeatLuggageTransportCost" msprop:Generator_ColumnVarNameInTable="columnBusSeatLuggageTransportCost" msprop:Generator_ColumnPropNameInRow="BusSeatLuggageTransportCost" msprop:Generator_ColumnPropNameInTable="BusSeatLuggageTransportCostColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Directions" msprop:Generator_UserTableName="Directions" msprop:Generator_RowDeletedName="DirectionsRowDeleted" msprop:Generator_RowChangedName="DirectionsRowChanged" msprop:Generator_RowClassName="DirectionsRow" msprop:Generator_RowChangingName="DirectionsRowChanging" msprop:Generator_RowEvArgName="DirectionsRowChangeEvent" msprop:Generator_RowEvHandlerName="DirectionsRowChangeEventHandler" msprop:Generator_TableClassName="DirectionsDataTable" msprop:Generator_TableVarName="tableDirections" msprop:Generator_RowDeletingName="DirectionsRowDeleting" msprop:Generator_TablePropName="Directions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActivityState" msprop:Generator_UserColumnName="ActivityState" msprop:Generator_ColumnVarNameInTable="columnActivityState" msprop:Generator_ColumnPropNameInRow="ActivityState" msprop:Generator_ColumnPropNameInTable="ActivityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DirectionsOneKmCosts" msprop:Generator_UserTableName="DirectionsOneKmCosts" msprop:Generator_RowDeletedName="DirectionsOneKmCostsRowDeleted" msprop:Generator_RowChangedName="DirectionsOneKmCostsRowChanged" msprop:Generator_RowClassName="DirectionsOneKmCostsRow" msprop:Generator_RowChangingName="DirectionsOneKmCostsRowChanging" msprop:Generator_RowEvArgName="DirectionsOneKmCostsRowChangeEvent" msprop:Generator_RowEvHandlerName="DirectionsOneKmCostsRowChangeEventHandler" msprop:Generator_TableClassName="DirectionsOneKmCostsDataTable" msprop:Generator_TableVarName="tableDirectionsOneKmCosts" msprop:Generator_RowDeletingName="DirectionsOneKmCostsRowDeleting" msprop:Generator_TablePropName="DirectionsOneKmCosts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Direction" msprop:Generator_UserColumnName="Direction" msprop:Generator_ColumnVarNameInTable="columnDirection" msprop:Generator_ColumnPropNameInRow="Direction" msprop:Generator_ColumnPropNameInTable="DirectionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusCategory" msprop:Generator_UserColumnName="BusCategory" msprop:Generator_ColumnVarNameInTable="columnBusCategory" msprop:Generator_ColumnPropNameInRow="BusCategory" msprop:Generator_ColumnPropNameInTable="BusCategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusSeatsQuantity" msprop:Generator_UserColumnName="BusSeatsQuantity" msprop:Generator_ColumnVarNameInTable="columnBusSeatsQuantity" msprop:Generator_ColumnPropNameInRow="BusSeatsQuantity" msprop:Generator_ColumnPropNameInTable="BusSeatsQuantityColumn" type="xs:unsignedByte" />
+              <xs:element name="DirectionOneKmCost" msprop:Generator_UserColumnName="DirectionOneKmCost" msprop:Generator_ColumnVarNameInTable="columnDirectionOneKmCost" msprop:Generator_ColumnPropNameInRow="DirectionOneKmCost" msprop:Generator_ColumnPropNameInTable="DirectionOneKmCostColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Drivers" msprop:Generator_UserTableName="Drivers" msprop:Generator_RowDeletedName="DriversRowDeleted" msprop:Generator_RowChangedName="DriversRowChanged" msprop:Generator_RowClassName="DriversRow" msprop:Generator_RowChangingName="DriversRowChanging" msprop:Generator_RowEvArgName="DriversRowChangeEvent" msprop:Generator_RowEvHandlerName="DriversRowChangeEventHandler" msprop:Generator_TableClassName="DriversDataTable" msprop:Generator_TableVarName="tableDrivers" msprop:Generator_RowDeletingName="DriversRowDeleting" msprop:Generator_TablePropName="Drivers">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Surname" msprop:Generator_UserColumnName="Surname" msprop:Generator_ColumnVarNameInTable="columnSurname" msprop:Generator_ColumnPropNameInRow="Surname" msprop:Generator_ColumnPropNameInTable="SurnameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FirstName" msprop:Generator_UserColumnName="FirstName" msprop:Generator_ColumnVarNameInTable="columnFirstName" msprop:Generator_ColumnPropNameInRow="FirstName" msprop:Generator_ColumnPropNameInTable="FirstNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PatronymicName" msprop:Generator_UserColumnName="PatronymicName" msprop:Generator_ColumnVarNameInTable="columnPatronymicName" msprop:Generator_ColumnPropNameInRow="PatronymicName" msprop:Generator_ColumnPropNameInTable="PatronymicNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PassportData" msprop:Generator_UserColumnName="PassportData" msprop:Generator_ColumnVarNameInTable="columnPassportData" msprop:Generator_ColumnPropNameInRow="PassportData" msprop:Generator_ColumnPropNameInTable="PassportDataColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BirthDay" msdata:ReadOnly="true" msprop:Generator_UserColumnName="BirthDay" msprop:Generator_ColumnVarNameInTable="columnBirthDay" msprop:Generator_ColumnPropNameInRow="BirthDay" msprop:Generator_ColumnPropNameInTable="BirthDayColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ServiceLength" msprop:Generator_UserColumnName="ServiceLength" msprop:Generator_ColumnVarNameInTable="columnServiceLength" msprop:Generator_ColumnPropNameInRow="ServiceLength" msprop:Generator_ColumnPropNameInTable="ServiceLengthColumn" type="xs:unsignedByte" />
+              <xs:element name="ActivityState" msprop:Generator_UserColumnName="ActivityState" msprop:Generator_ColumnVarNameInTable="columnActivityState" msprop:Generator_ColumnPropNameInRow="ActivityState" msprop:Generator_ColumnPropNameInTable="ActivityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FoundPathMapStopsCoordinates" msprop:Generator_UserTableName="FoundPathMapStopsCoordinates" msprop:Generator_RowDeletedName="FoundPathMapStopsCoordinatesRowDeleted" msprop:Generator_RowChangedName="FoundPathMapStopsCoordinatesRowChanged" msprop:Generator_RowClassName="FoundPathMapStopsCoordinatesRow" msprop:Generator_RowChangingName="FoundPathMapStopsCoordinatesRowChanging" msprop:Generator_RowEvArgName="FoundPathMapStopsCoordinatesRowChangeEvent" msprop:Generator_RowEvHandlerName="FoundPathMapStopsCoordinatesRowChangeEventHandler" msprop:Generator_TableClassName="FoundPathMapStopsCoordinatesDataTable" msprop:Generator_TableVarName="tableFoundPathMapStopsCoordinates" msprop:Generator_RowDeletingName="FoundPathMapStopsCoordinatesRowDeleting" msprop:Generator_TablePropName="FoundPathMapStopsCoordinates">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PathStopNumber" msprop:Generator_UserColumnName="PathStopNumber" msprop:Generator_ColumnVarNameInTable="columnPathStopNumber" msprop:Generator_ColumnPropNameInRow="PathStopNumber" msprop:Generator_ColumnPropNameInTable="PathStopNumberColumn" type="xs:unsignedByte" />
+              <xs:element name="Stop" msprop:Generator_UserColumnName="Stop" msprop:Generator_ColumnVarNameInTable="columnStop" msprop:Generator_ColumnPropNameInRow="Stop" msprop:Generator_ColumnPropNameInTable="StopColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StopX" msprop:Generator_UserColumnName="StopX" msprop:Generator_ColumnVarNameInTable="columnStopX" msprop:Generator_ColumnPropNameInRow="StopX" msprop:Generator_ColumnPropNameInTable="StopXColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="StopY" msprop:Generator_UserColumnName="StopY" msprop:Generator_ColumnVarNameInTable="columnStopY" msprop:Generator_ColumnPropNameInRow="StopY" msprop:Generator_ColumnPropNameInTable="StopYColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FoundPathStops" msprop:Generator_UserTableName="FoundPathStops" msprop:Generator_RowDeletedName="FoundPathStopsRowDeleted" msprop:Generator_RowChangedName="FoundPathStopsRowChanged" msprop:Generator_RowClassName="FoundPathStopsRow" msprop:Generator_RowChangingName="FoundPathStopsRowChanging" msprop:Generator_RowEvArgName="FoundPathStopsRowChangeEvent" msprop:Generator_RowEvHandlerName="FoundPathStopsRowChangeEventHandler" msprop:Generator_TableClassName="FoundPathStopsDataTable" msprop:Generator_TableVarName="tableFoundPathStops" msprop:Generator_RowDeletingName="FoundPathStopsRowDeleting" msprop:Generator_TablePropName="FoundPathStops">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:unsignedByte" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AfterPreviousDistance" msprop:Generator_UserColumnName="AfterPreviousDistance" msprop:Generator_ColumnVarNameInTable="columnAfterPreviousDistance" msprop:Generator_ColumnPropNameInRow="AfterPreviousDistance" msprop:Generator_ColumnPropNameInTable="AfterPreviousDistanceColumn" type="xs:decimal" />
+              <xs:element name="Distance" msprop:Generator_UserColumnName="Distance" msprop:Generator_ColumnVarNameInTable="columnDistance" msprop:Generator_ColumnPropNameInRow="Distance" msprop:Generator_ColumnPropNameInTable="DistanceColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Maps" msprop:Generator_UserTableName="Maps" msprop:Generator_RowDeletedName="MapsRowDeleted" msprop:Generator_RowChangedName="MapsRowChanged" msprop:Generator_RowClassName="MapsRow" msprop:Generator_RowChangingName="MapsRowChanging" msprop:Generator_RowEvArgName="MapsRowChangeEvent" msprop:Generator_RowEvHandlerName="MapsRowChangeEventHandler" msprop:Generator_TableClassName="MapsDataTable" msprop:Generator_TableVarName="tableMaps" msprop:Generator_RowDeletingName="MapsRowDeleting" msprop:Generator_TablePropName="Maps">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Paths" msprop:Generator_UserTableName="Paths" msprop:Generator_RowDeletedName="PathsRowDeleted" msprop:Generator_RowChangedName="PathsRowChanged" msprop:Generator_RowClassName="PathsRow" msprop:Generator_RowChangingName="PathsRowChanging" msprop:Generator_RowEvArgName="PathsRowChangeEvent" msprop:Generator_RowEvHandlerName="PathsRowChangeEventHandler" msprop:Generator_TableClassName="PathsDataTable" msprop:Generator_TableVarName="tablePaths" msprop:Generator_RowDeletingName="PathsRowDeleting" msprop:Generator_TablePropName="Paths">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Direction" msprop:Generator_UserColumnName="Direction" msprop:Generator_ColumnVarNameInTable="columnDirection" msprop:Generator_ColumnPropNameInRow="Direction" msprop:Generator_ColumnPropNameInTable="DirectionColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RangeKind" msprop:Generator_UserColumnName="RangeKind" msprop:Generator_ColumnVarNameInTable="columnRangeKind" msprop:Generator_ColumnPropNameInRow="RangeKind" msprop:Generator_ColumnPropNameInTable="RangeKindColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FinalPointStop" msprop:Generator_UserColumnName="FinalPointStop" msprop:Generator_ColumnVarNameInTable="columnFinalPointStop" msprop:Generator_ColumnPropNameInRow="FinalPointStop" msprop:Generator_ColumnPropNameInTable="FinalPointStopColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Length" msprop:Generator_UserColumnName="Length" msprop:Generator_ColumnVarNameInTable="columnLength" msprop:Generator_ColumnPropNameInRow="Length" msprop:Generator_ColumnPropNameInTable="LengthColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PlatformNumber" msprop:Generator_UserColumnName="PlatformNumber" msprop:Generator_ColumnVarNameInTable="columnPlatformNumber" msprop:Generator_ColumnPropNameInRow="PlatformNumber" msprop:Generator_ColumnPropNameInTable="PlatformNumberColumn" type="xs:unsignedByte" />
+              <xs:element name="ActivityState" msprop:Generator_UserColumnName="ActivityState" msprop:Generator_ColumnVarNameInTable="columnActivityState" msprop:Generator_ColumnPropNameInRow="ActivityState" msprop:Generator_ColumnPropNameInTable="ActivityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PathsRangesKinds" msprop:Generator_UserTableName="PathsRangesKinds" msprop:Generator_RowDeletedName="PathsRangesKindsRowDeleted" msprop:Generator_RowChangedName="PathsRangesKindsRowChanged" msprop:Generator_RowClassName="PathsRangesKindsRow" msprop:Generator_RowChangingName="PathsRangesKindsRowChanging" msprop:Generator_RowEvArgName="PathsRangesKindsRowChangeEvent" msprop:Generator_RowEvHandlerName="PathsRangesKindsRowChangeEventHandler" msprop:Generator_TableClassName="PathsRangesKindsDataTable" msprop:Generator_TableVarName="tablePathsRangesKinds" msprop:Generator_RowDeletingName="PathsRangesKindsRowDeleting" msprop:Generator_TablePropName="PathsRangesKinds">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RecordsActivitiesStates" msprop:Generator_UserTableName="RecordsActivitiesStates" msprop:Generator_RowDeletedName="RecordsActivitiesStatesRowDeleted" msprop:Generator_RowChangedName="RecordsActivitiesStatesRowChanged" msprop:Generator_RowClassName="RecordsActivitiesStatesRow" msprop:Generator_RowChangingName="RecordsActivitiesStatesRowChanging" msprop:Generator_RowEvArgName="RecordsActivitiesStatesRowChangeEvent" msprop:Generator_RowEvHandlerName="RecordsActivitiesStatesRowChangeEventHandler" msprop:Generator_TableClassName="RecordsActivitiesStatesDataTable" msprop:Generator_TableVarName="tableRecordsActivitiesStates" msprop:Generator_RowDeletingName="RecordsActivitiesStatesRowDeleting" msprop:Generator_TablePropName="RecordsActivitiesStates">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RunsExecutions" msprop:Generator_UserTableName="RunsExecutions" msprop:Generator_RowDeletedName="RunsExecutionsRowDeleted" msprop:Generator_RowChangedName="RunsExecutionsRowChanged" msprop:Generator_RowClassName="RunsExecutionsRow" msprop:Generator_RowChangingName="RunsExecutionsRowChanging" msprop:Generator_RowEvArgName="RunsExecutionsRowChangeEvent" msprop:Generator_RowEvHandlerName="RunsExecutionsRowChangeEventHandler" msprop:Generator_TableClassName="RunsExecutionsDataTable" msprop:Generator_TableVarName="tableRunsExecutions" msprop:Generator_RowDeletingName="RunsExecutionsRowDeleting" msprop:Generator_TablePropName="RunsExecutions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_UserColumnName="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Weekday" msprop:Generator_UserColumnName="Weekday" msprop:Generator_ColumnVarNameInTable="columnWeekday" msprop:Generator_ColumnPropNameInRow="Weekday" msprop:Generator_ColumnPropNameInTable="WeekdayColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Time" msprop:Generator_UserColumnName="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusCarCode" msprop:Generator_UserColumnName="BusCarCode" msprop:Generator_ColumnVarNameInTable="columnBusCarCode" msprop:Generator_ColumnPropNameInRow="BusCarCode" msprop:Generator_ColumnPropNameInTable="BusCarCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusCategory" msprop:Generator_UserColumnName="BusCategory" msprop:Generator_ColumnVarNameInTable="columnBusCategory" msprop:Generator_ColumnPropNameInRow="BusCategory" msprop:Generator_ColumnPropNameInTable="BusCategoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusSeatsQuantity" msprop:Generator_UserColumnName="BusSeatsQuantity" msprop:Generator_ColumnVarNameInTable="columnBusSeatsQuantity" msprop:Generator_ColumnPropNameInRow="BusSeatsQuantity" msprop:Generator_ColumnPropNameInTable="BusSeatsQuantityColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="BusPlanningPathExpense" msprop:Generator_UserColumnName="BusPlanningPathExpense" msprop:Generator_ColumnVarNameInTable="columnBusPlanningPathExpense" msprop:Generator_ColumnPropNameInRow="BusPlanningPathExpense" msprop:Generator_ColumnPropNameInTable="BusPlanningPathExpenseColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BusTicketCost" msprop:Generator_UserColumnName="BusTicketCost" msprop:Generator_ColumnVarNameInTable="columnBusTicketCost" msprop:Generator_ColumnPropNameInRow="BusTicketCost" msprop:Generator_ColumnPropNameInTable="BusTicketCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BusSeatLuggageTransportCost" msprop:Generator_UserColumnName="BusSeatLuggageTransportCost" msprop:Generator_ColumnVarNameInTable="columnBusSeatLuggageTransportCost" msprop:Generator_ColumnPropNameInRow="BusSeatLuggageTransportCost" msprop:Generator_ColumnPropNameInTable="BusSeatLuggageTransportCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SoldTicketsQuantity" msprop:Generator_UserColumnName="SoldTicketsQuantity" msprop:Generator_ColumnVarNameInTable="columnSoldTicketsQuantity" msprop:Generator_ColumnPropNameInRow="SoldTicketsQuantity" msprop:Generator_ColumnPropNameInTable="SoldTicketsQuantityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="LuggagesQuantity" msprop:Generator_UserColumnName="LuggagesQuantity" msprop:Generator_ColumnVarNameInTable="columnLuggagesQuantity" msprop:Generator_ColumnPropNameInRow="LuggagesQuantity" msprop:Generator_ColumnPropNameInTable="LuggagesQuantityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DriverSurname" msprop:Generator_UserColumnName="DriverSurname" msprop:Generator_ColumnVarNameInTable="columnDriverSurname" msprop:Generator_ColumnPropNameInRow="DriverSurname" msprop:Generator_ColumnPropNameInTable="DriverSurnameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DriverPassportData" msprop:Generator_UserColumnName="DriverPassportData" msprop:Generator_ColumnVarNameInTable="columnDriverPassportData" msprop:Generator_ColumnPropNameInRow="DriverPassportData" msprop:Generator_ColumnPropNameInTable="DriverPassportDataColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Income" msprop:Generator_UserColumnName="Income" msprop:Generator_ColumnVarNameInTable="columnIncome" msprop:Generator_ColumnPropNameInRow="Income" msprop:Generator_ColumnPropNameInTable="IncomeColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Profit" msprop:Generator_UserColumnName="Profit" msprop:Generator_ColumnVarNameInTable="columnProfit" msprop:Generator_ColumnPropNameInRow="Profit" msprop:Generator_ColumnPropNameInTable="ProfitColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RunsTimetable" msprop:Generator_UserTableName="RunsTimetable" msprop:Generator_RowDeletedName="RunsTimetableRowDeleted" msprop:Generator_RowChangedName="RunsTimetableRowChanged" msprop:Generator_RowClassName="RunsTimetableRow" msprop:Generator_RowChangingName="RunsTimetableRowChanging" msprop:Generator_RowEvArgName="RunsTimetableRowChangeEvent" msprop:Generator_RowEvHandlerName="RunsTimetableRowChangeEventHandler" msprop:Generator_TableClassName="RunsTimetableDataTable" msprop:Generator_TableVarName="tableRunsTimetable" msprop:Generator_RowDeletingName="RunsTimetableRowDeleting" msprop:Generator_TablePropName="RunsTimetable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusCategory" msprop:Generator_UserColumnName="BusCategory" msprop:Generator_ColumnVarNameInTable="columnBusCategory" msprop:Generator_ColumnPropNameInRow="BusCategory" msprop:Generator_ColumnPropNameInTable="BusCategoryColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Weekday" msprop:Generator_UserColumnName="Weekday" msprop:Generator_ColumnVarNameInTable="columnWeekday" msprop:Generator_ColumnPropNameInRow="Weekday" msprop:Generator_ColumnPropNameInTable="WeekdayColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Time" msprop:Generator_UserColumnName="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActivityState" msprop:Generator_UserColumnName="ActivityState" msprop:Generator_ColumnVarNameInTable="columnActivityState" msprop:Generator_ColumnPropNameInRow="ActivityState" msprop:Generator_ColumnPropNameInTable="ActivityStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Stops" msprop:Generator_UserTableName="Stops" msprop:Generator_RowDeletedName="StopsRowDeleted" msprop:Generator_RowChangedName="StopsRowChanged" msprop:Generator_RowClassName="StopsRow" msprop:Generator_RowChangingName="StopsRowChanging" msprop:Generator_RowEvArgName="StopsRowChangeEvent" msprop:Generator_RowEvHandlerName="StopsRowChangeEventHandler" msprop:Generator_TableClassName="StopsDataTable" msprop:Generator_TableVarName="tableStops" msprop:Generator_RowDeletingName="StopsRowDeleting" msprop:Generator_TablePropName="Stops">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:unsignedByte" />
+              <xs:element name="AfterPreviousDistance" msprop:Generator_UserColumnName="AfterPreviousDistance" msprop:Generator_ColumnVarNameInTable="columnAfterPreviousDistance" msprop:Generator_ColumnPropNameInRow="AfterPreviousDistance" msprop:Generator_ColumnPropNameInTable="AfterPreviousDistanceColumn" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StopsCoordinates" msprop:Generator_UserTableName="StopsCoordinates" msprop:Generator_RowDeletedName="StopsCoordinatesRowDeleted" msprop:Generator_RowChangedName="StopsCoordinatesRowChanged" msprop:Generator_RowClassName="StopsCoordinatesRow" msprop:Generator_RowChangingName="StopsCoordinatesRowChanging" msprop:Generator_RowEvArgName="StopsCoordinatesRowChangeEvent" msprop:Generator_RowEvHandlerName="StopsCoordinatesRowChangeEventHandler" msprop:Generator_TableClassName="StopsCoordinatesDataTable" msprop:Generator_TableVarName="tableStopsCoordinates" msprop:Generator_RowDeletingName="StopsCoordinatesRowDeleting" msprop:Generator_TablePropName="StopsCoordinates">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Map" msprop:Generator_UserColumnName="Map" msprop:Generator_ColumnVarNameInTable="columnMap" msprop:Generator_ColumnPropNameInRow="Map" msprop:Generator_ColumnPropNameInTable="MapColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stop" msprop:Generator_UserColumnName="Stop" msprop:Generator_ColumnVarNameInTable="columnStop" msprop:Generator_ColumnPropNameInRow="Stop" msprop:Generator_ColumnPropNameInTable="StopColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PathStopNumber" msprop:Generator_UserColumnName="PathStopNumber" msprop:Generator_ColumnVarNameInTable="columnPathStopNumber" msprop:Generator_ColumnPropNameInRow="PathStopNumber" msprop:Generator_ColumnPropNameInTable="PathStopNumberColumn" type="xs:unsignedByte" />
+              <xs:element name="StopX" msprop:Generator_UserColumnName="StopX" msprop:Generator_ColumnVarNameInTable="columnStopX" msprop:Generator_ColumnPropNameInRow="StopX" msprop:Generator_ColumnPropNameInTable="StopXColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="StopY" msprop:Generator_UserColumnName="StopY" msprop:Generator_ColumnVarNameInTable="columnStopY" msprop:Generator_ColumnPropNameInRow="StopY" msprop:Generator_ColumnPropNameInTable="StopYColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TicketsSale" msprop:Generator_UserTableName="TicketsSale" msprop:Generator_RowDeletedName="TicketsSaleRowDeleted" msprop:Generator_RowChangedName="TicketsSaleRowChanged" msprop:Generator_RowClassName="TicketsSaleRow" msprop:Generator_RowChangingName="TicketsSaleRowChanging" msprop:Generator_RowEvArgName="TicketsSaleRowChangeEvent" msprop:Generator_RowEvHandlerName="TicketsSaleRowChangeEventHandler" msprop:Generator_TableClassName="TicketsSaleDataTable" msprop:Generator_TableVarName="tableTicketsSale" msprop:Generator_RowDeletingName="TicketsSaleRowDeleting" msprop:Generator_TablePropName="TicketsSale">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RunExecutionDate" msprop:Generator_UserColumnName="RunExecutionDate" msprop:Generator_ColumnVarNameInTable="columnRunExecutionDate" msprop:Generator_ColumnPropNameInRow="RunExecutionDate" msprop:Generator_ColumnPropNameInTable="RunExecutionDateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RunWeekday" msprop:Generator_UserColumnName="RunWeekday" msprop:Generator_ColumnVarNameInTable="columnRunWeekday" msprop:Generator_ColumnPropNameInRow="RunWeekday" msprop:Generator_ColumnPropNameInTable="RunWeekdayColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RunTime" msprop:Generator_UserColumnName="RunTime" msprop:Generator_ColumnVarNameInTable="columnRunTime" msprop:Generator_ColumnPropNameInRow="RunTime" msprop:Generator_ColumnPropNameInTable="RunTimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusCarCode" msprop:Generator_UserColumnName="BusCarCode" msprop:Generator_ColumnVarNameInTable="columnBusCarCode" msprop:Generator_ColumnPropNameInRow="BusCarCode" msprop:Generator_ColumnPropNameInTable="BusCarCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="9" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusCategory" msprop:Generator_UserColumnName="BusCategory" msprop:Generator_ColumnVarNameInTable="columnBusCategory" msprop:Generator_ColumnPropNameInRow="BusCategory" msprop:Generator_ColumnPropNameInTable="BusCategoryColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusSeatsQuantity" msprop:Generator_UserColumnName="BusSeatsQuantity" msprop:Generator_ColumnVarNameInTable="columnBusSeatsQuantity" msprop:Generator_ColumnPropNameInRow="BusSeatsQuantity" msprop:Generator_ColumnPropNameInTable="BusSeatsQuantityColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="DriverSurname" msprop:Generator_UserColumnName="DriverSurname" msprop:Generator_ColumnVarNameInTable="columnDriverSurname" msprop:Generator_ColumnPropNameInRow="DriverSurname" msprop:Generator_ColumnPropNameInTable="DriverSurnameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DriverPassportData" msprop:Generator_UserColumnName="DriverPassportData" msprop:Generator_ColumnVarNameInTable="columnDriverPassportData" msprop:Generator_ColumnPropNameInRow="DriverPassportData" msprop:Generator_ColumnPropNameInTable="DriverPassportDataColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:unsignedByte" />
+              <xs:element name="BusSeatSaleState" msprop:Generator_UserColumnName="BusSeatSaleState" msprop:Generator_ColumnVarNameInTable="columnBusSeatSaleState" msprop:Generator_ColumnPropNameInRow="BusSeatSaleState" msprop:Generator_ColumnPropNameInTable="BusSeatSaleStateColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusSeatLuggagePresence" msprop:Generator_UserColumnName="BusSeatLuggagePresence" msprop:Generator_ColumnVarNameInTable="columnBusSeatLuggagePresence" msprop:Generator_ColumnPropNameInRow="BusSeatLuggagePresence" msprop:Generator_ColumnPropNameInTable="BusSeatLuggagePresenceColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Weekdays" msprop:Generator_UserTableName="Weekdays" msprop:Generator_RowDeletedName="WeekdaysRowDeleted" msprop:Generator_RowChangedName="WeekdaysRowChanged" msprop:Generator_RowClassName="WeekdaysRow" msprop:Generator_RowChangingName="WeekdaysRowChanging" msprop:Generator_RowEvArgName="WeekdaysRowChangeEvent" msprop:Generator_RowEvHandlerName="WeekdaysRowChangeEventHandler" msprop:Generator_TableClassName="WeekdaysDataTable" msprop:Generator_TableVarName="tableWeekdays" msprop:Generator_RowDeletingName="WeekdaysRowDeleting" msprop:Generator_TablePropName="Weekdays">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FoundStops" msprop:Generator_UserTableName="FoundStops" msprop:Generator_RowDeletedName="FoundStopsRowDeleted" msprop:Generator_RowChangedName="FoundStopsRowChanged" msprop:Generator_RowClassName="FoundStopsRow" msprop:Generator_RowChangingName="FoundStopsRowChanging" msprop:Generator_RowEvArgName="FoundStopsRowChangeEvent" msprop:Generator_RowEvHandlerName="FoundStopsRowChangeEventHandler" msprop:Generator_TableClassName="FoundStopsDataTable" msprop:Generator_TableVarName="tableFoundStops" msprop:Generator_RowDeletingName="FoundStopsRowDeleting" msprop:Generator_TablePropName="FoundStops">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PathStopsQuantity" msprop:Generator_UserColumnName="PathStopsQuantity" msprop:Generator_ColumnPropNameInRow="PathStopsQuantity" msprop:Generator_ColumnVarNameInTable="columnPathStopsQuantity" msprop:Generator_ColumnPropNameInTable="PathStopsQuantityColumn" type="xs:unsignedByte" minOccurs="0" />
+              <xs:element name="Number" msprop:Generator_UserColumnName="Number" msprop:Generator_ColumnPropNameInRow="Number" msprop:Generator_ColumnVarNameInTable="columnNumber" msprop:Generator_ColumnPropNameInTable="NumberColumn" type="xs:unsignedByte" />
+              <xs:element name="Distance" msprop:Generator_UserColumnName="Distance" msprop:Generator_ColumnPropNameInRow="Distance" msprop:Generator_ColumnVarNameInTable="columnDistance" msprop:Generator_ColumnPropNameInTable="DistanceColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_UserColumnName="Time" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInTable="TimeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BusTicketCost" msprop:Generator_UserColumnName="BusTicketCost" msprop:Generator_ColumnPropNameInRow="BusTicketCost" msprop:Generator_ColumnVarNameInTable="columnBusTicketCost" msprop:Generator_ColumnPropNameInTable="BusTicketCostColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BusSeatLuggageTransportCost" msprop:Generator_UserColumnName="BusSeatLuggageTransportCost" msprop:Generator_ColumnPropNameInRow="BusSeatLuggageTransportCost" msprop:Generator_ColumnVarNameInTable="columnBusSeatLuggageTransportCost" msprop:Generator_ColumnPropNameInTable="BusSeatLuggageTransportCostColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PathsMaps" msprop:Generator_UserTableName="PathsMaps" msprop:Generator_RowDeletedName="PathsMapsRowDeleted" msprop:Generator_TableClassName="PathsMapsDataTable" msprop:Generator_RowChangedName="PathsMapsRowChanged" msprop:Generator_RowClassName="PathsMapsRow" msprop:Generator_RowChangingName="PathsMapsRowChanging" msprop:Generator_RowEvArgName="PathsMapsRowChangeEvent" msprop:Generator_RowEvHandlerName="PathsMapsRowChangeEventHandler" msprop:Generator_TablePropName="PathsMaps" msprop:Generator_TableVarName="tablePathsMaps" msprop:Generator_RowDeletingName="PathsMapsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Path" msprop:Generator_UserColumnName="Path" msprop:Generator_ColumnPropNameInRow="Path" msprop:Generator_ColumnVarNameInTable="columnPath" msprop:Generator_ColumnPropNameInTable="PathColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Map" msprop:Generator_UserColumnName="Map" msprop:Generator_ColumnPropNameInRow="Map" msprop:Generator_ColumnVarNameInTable="columnMap" msprop:Generator_ColumnPropNameInTable="MapColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InitialPointX" msprop:Generator_UserColumnName="InitialPointX" msprop:Generator_ColumnPropNameInRow="InitialPointX" msprop:Generator_ColumnVarNameInTable="columnInitialPointX" msprop:Generator_ColumnPropNameInTable="InitialPointXColumn" type="xs:double" />
+              <xs:element name="InitialPointY" msprop:Generator_UserColumnName="InitialPointY" msprop:Generator_ColumnPropNameInRow="InitialPointY" msprop:Generator_ColumnVarNameInTable="columnInitialPointY" msprop:Generator_ColumnPropNameInTable="InitialPointYColumn" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FoundPathMaps" msprop:Generator_UserTableName="FoundPathMaps" msprop:Generator_RowDeletedName="FoundPathMapsRowDeleted" msprop:Generator_TableClassName="FoundPathMapsDataTable" msprop:Generator_RowChangedName="FoundPathMapsRowChanged" msprop:Generator_RowClassName="FoundPathMapsRow" msprop:Generator_RowChangingName="FoundPathMapsRowChanging" msprop:Generator_RowEvArgName="FoundPathMapsRowChangeEvent" msprop:Generator_RowEvHandlerName="FoundPathMapsRowChangeEventHandler" msprop:Generator_TablePropName="FoundPathMaps" msprop:Generator_TableVarName="tableFoundPathMaps" msprop:Generator_RowDeletingName="FoundPathMapsRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Map" msprop:Generator_UserColumnName="Map" msprop:Generator_ColumnPropNameInRow="Map" msprop:Generator_ColumnVarNameInTable="columnMap" msprop:Generator_ColumnPropNameInTable="MapColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InitialPointX" msprop:Generator_UserColumnName="InitialPointX" msprop:Generator_ColumnPropNameInRow="InitialPointX" msprop:Generator_ColumnVarNameInTable="columnInitialPointX" msprop:Generator_ColumnPropNameInTable="InitialPointXColumn" type="xs:double" />
+              <xs:element name="InitialPointY" msprop:Generator_UserColumnName="InitialPointY" msprop:Generator_ColumnPropNameInRow="InitialPointY" msprop:Generator_ColumnVarNameInTable="columnInitialPointY" msprop:Generator_ColumnPropNameInTable="InitialPointYColumn" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

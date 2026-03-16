@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{709C74DC-8DBB-4005-AEBF-DC3AB5000770}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CentralBusTerminalClient</RootNamespace>
+    <AssemblyName>CentralBusTerminalClient</AssemblyName>
+    <ApplicationIcon>LargeBus.ico</ApplicationIcon>
+    <Win32Resource>
+    </Win32Resource>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CentralBusTerminalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CentralBusTerminalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ConnectionCondition.cs" />
+    <Compile Include="Classes\DataContainer.cs" />
+    <Compile Include="Classes\EditEntitiesEventsArgs\EditRunExecutionEventArgs.cs" />
+    <Compile Include="Classes\EditEntitiesEventsArgs\EditBusEventArgs.cs" />
+    <Compile Include="Classes\Entities\Bus.cs" />
+    <Compile Include="Classes\Entities\BusPlanningPathExpense.cs" />
+    <Compile Include="Classes\Entities\Entity.cs" />
+    <Compile Include="Classes\Entities\FoundPathMap.cs" />
+    <Compile Include="Classes\Entities\FoundPathMapStopCoordinates.cs" />
+    <Compile Include="Classes\Entities\FoundPathStop.cs" />
+    <Compile Include="Classes\Entities\FoundStop.cs" />
+    <Compile Include="Classes\Entities\RunExecution.cs" />
+    <Compile Include="Classes\OperationReport.cs" />
+    <Compile Include="Classes\Parameter.cs" />
+    <Compile Include="Forms\ConnectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConnectionForm.Designer.cs">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PathStopsSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PathStopsSearchForm.Designer.cs">
+      <DependentUpon>PathStopsSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\StopsSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StopsSearchForm.Designer.cs">
+      <DependentUpon>StopsSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditEntitiesForms\EditRunExecutionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditEntitiesForms\EditRunExecutionForm.Designer.cs">
+      <DependentUpon>EditRunExecutionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditEntitiesForms\EditBusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditEntitiesForms\EditBusForm.Designer.cs">
+      <DependentUpon>EditBusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ConnectionSecurityLevel.cs" />
+    <Compile Include="Enums\OperationResult.cs" />
+    <Compile Include="Enums\StoredProcedureErrorCause.cs" />
+    <Compile Include="Forms\EditEntitiesForms\EditEntityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditEntitiesForms\EditEntityForm.Designer.cs">
+      <DependentUpon>EditEntityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShowTablesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShowTablesForm.Designer.cs">
+      <DependentUpon>ShowTablesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IEditEntityForm.cs" />
+    <Compile Include="Interfaces\IEntityForm.cs" />
+    <Compile Include="OLD\Class1.cs" />
+    <Compile Include="OLD\ParameterSqlType.cs" />
+    <Compile Include="Enums\StoredProcedureAction.cs" />
+    <Compile Include="Forms\ModeChoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ModeChoiceForm.Designer.cs">
+      <DependentUpon>ModeChoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\IClearAble.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\ModeChoiceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModeChoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="CentralBusTerminalClassDiagram.cd" />
+    <None Include="CentralBusTerminalDataSet.xsc">
+      <DependentUpon>CentralBusTerminalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CentralBusTerminalDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CentralBusTerminalDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CentralBusTerminalDataSet.xss">
+      <DependentUpon>CentralBusTerminalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Structs\DataGridViewRowCellValue.cs" />
+    <Compile Include="Structs\ConnectionAttributes.cs" />
+    <Compile Include="Structs\PathMap.cs" />
+    <Compile Include="Structs\PathMapStopCoordinatesItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LargeBus.ico" />
+    <EmbeddedResource Include="Resources\Close.bmp" />
+    <EmbeddedResource Include="Resources\Connect.bmp" />
+    <EmbeddedResource Include="Forms\ConnectionForm.resx">
+      <DependentUpon>ConnectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PathStopsSearchForm.resx">
+      <DependentUpon>PathStopsSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Find.bmp" />
+    <EmbeddedResource Include="Forms\StopsSearchForm.resx">
+      <DependentUpon>StopsSearchForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Delete.bmp" />
+    <EmbeddedResource Include="Resources\Edit.bmp" />
+    <EmbeddedResource Include="Resources\Add.bmp" />
+    <EmbeddedResource Include="Forms\EditEntitiesForms\EditBusForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditBusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditEntitiesForms\EditEntityForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditEntityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditEntitiesForms\EditRunExecutionForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EditRunExecutionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShowTablesForm.resx">
+      <DependentUpon>ShowTablesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Close.ico" />
+    <EmbeddedResource Include="Resources\SmallBus.ico" />
+    <EmbeddedResource Include="Resources\Details.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>Клиентский профиль .NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Установщик Windows 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
